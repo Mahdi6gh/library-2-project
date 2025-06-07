@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>درباره کتابخانه دانش</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/vazirmatn@33.0.3/Vazirmatn-font-face.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      :root {
+        --primary: #1e3a8a;
+        --primary-light: #3b82f6;
+        --secondary: #854d0e;
+        --secondary-light: #ca8a04;
+        --accent: #4c1d95;
+        --light: #f8fafc;
+        --dark: #1e293b;
+      }
+      body {
+        font-family: "Vazirmatn", sans-serif;
+        scroll-behavior: smooth;
+        background: var(--light);
+        color: var(--dark);
+      }
+      .hero-gradient {
+        background: linear-gradient(135deg, var(--primary), var(--accent));
+      }
+      .event-card {
+        transition: all 0.3s ease;
+      }
+      .event-card:hover {
+        transform: translateY(-5px) scale(1.03);
+        box-shadow: 0 10px 20px rgba(30, 58, 138, 0.08);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center">
+            <div class="text-2xl font-bold text-primary flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 ml-2 text-primary"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                />
+              </svg>
+              <span>کتابخانه دانش</span>
+            </div>
+          </div>
+          <nav class="hidden md:flex items-center space-x-6 space-x-reverse">
+            <a
+              href="index.html#home"
+              class="nav-link text-gray-800 hover:text-primary transition"
+              >خانه</a
+            >
+            <a
+              href="index.html#books"
+              class="nav-link text-gray-800 hover:text-primary transition"
+              >کتاب‌ها</a
+            >
+            <a
+              href="index.html#services"
+              class="nav-link text-gray-800 hover:text-primary transition"
+              >خدمات</a
+            >
+            <a
+              href="events.html"
+              class="nav-link text-gray-800 hover:text-primary transition"
+              >رویدادها</a
+            >
+            <a href="about.html" class="nav-link text-primary font-bold"
+              >درباره ما</a
+            >
+            <a
+              href="index.html#contact"
+              class="nav-link text-gray-800 hover:text-primary transition"
+              >تماس با ما</a
+            >
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-20 text-white text-center">
+      <div class="container mx-auto px-4">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          درباره کتابخانه دانش
+        </h1>
+        <p class="text-lg md:text-xl opacity-90 mb-6">
+          کتابخانه دانش، مرکز جامع مطالعه و یادگیری برای همه علاقه‌مندان به کتاب
+          و دانش است.
+        </p>
+      </div>
+    </section>
+
+    <!-- About Content -->
+    <main class="py-16 bg-gray-50 min-h-screen">
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-md p-8">
+          <h2 class="text-3xl font-bold mb-6 text-primary text-center">
+            تاریخچه و ماموریت ما
+          </h2>
+          <p class="text-gray-700 mb-6 leading-relaxed text-justify">
+            کتابخانه دانش با هدف ترویج فرهنگ کتابخوانی و فراهم کردن دسترسی آسان
+            به منابع علمی و ادبی، فعالیت خود را از سال ۱۳۸۰ آغاز کرد. این
+            کتابخانه با بیش از ۵۰,۰۰۰ جلد کتاب در موضوعات مختلف، یکی از
+            بزرگ‌ترین مراکز فرهنگی و آموزشی منطقه به شمار می‌رود.
+          </p>
+          <p class="text-gray-700 mb-6 leading-relaxed text-justify">
+            ماموریت ما ایجاد محیطی پویا و الهام‌بخش برای یادگیری، پژوهش و تبادل
+            دانش است. ما تلاش می‌کنیم با ارائه خدمات نوین، فضای مطالعه آرام و
+            دسترسی به منابع دیجیتال و چاپی، نیازهای اعضا و پژوهشگران را برآورده
+            کنیم.
+          </p>
+          <h3 class="text-2xl font-bold mb-4 text-secondary">
+            ویژگی‌های کتابخانه دانش
+          </h3>
+          <ul class="list-disc pr-6 text-gray-700 mb-6 leading-relaxed">
+            <li>امانت و رزرو آنلاین کتاب‌ها</li>
+            <li>دسترسی به کتابخانه دیجیتال و منابع الکترونیکی</li>
+            <li>برگزاری رویدادها و کارگاه‌های آموزشی</li>
+            <li>فضای مطالعه فردی و گروهی با اینترنت رایگان</li>
+            <li>مشاوره پژوهشی و راهنمایی علمی</li>
+          </ul>
+          <h3 class="text-2xl font-bold mb-4 text-secondary">تیم ما</h3>
+          <p class="text-gray-700 mb-6 leading-relaxed text-justify">
+            تیم کتابخانه دانش متشکل از کتابداران مجرب، پژوهشگران و کارشناسان
+            فناوری اطلاعات است که همواره آماده پاسخگویی به نیازهای اعضا و ارائه
+            بهترین خدمات هستند.
+          </p>
+          <div class="text-center mt-8">
+            <a
+              href="index.html#contact"
+              class="inline-block bg-primary text-white px-6 py-3 rounded-lg font-bold hover:bg-primary-light transition"
+              >تماس با ما</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t mt-16 py-6">
+      <div class="container mx-auto px-4 text-center text-gray-500 text-sm">
+        © ۱۴۰۴ کتابخانه دانش. تمامی حقوق محفوظ است.
+      </div>
+    </footer>
+  </body>
+</html>

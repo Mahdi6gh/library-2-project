@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ورود به کتابخانه دانش</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/vazirmatn@33.0.3/Vazirmatn-font-face.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      :root {
+        --primary: #1e3a8a;
+        --primary-light: #3b82f6;
+        --secondary: #854d0e;
+        --secondary-light: #ca8a04;
+        --accent: #4c1d95;
+        --light: #f8fafc;
+        --dark: #1e293b;
+      }
+      body {
+        font-family: "Vazirmatn", sans-serif;
+        scroll-behavior: smooth;
+        background: var(--light);
+        color: var(--dark);
+      }
+      .hero-gradient {
+        background: linear-gradient(135deg, var(--primary), var(--accent));
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center">
+            <div class="text-2xl font-bold text-primary flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 ml-2 text-primary"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                />
+              </svg>
+              <span>کتابخانه دانش</span>
+            </div>
+          </div>
+          <nav class="hidden md:flex items-center space-x-6 space-x-reverse">
+            <a
+              href="index.html#home"
+              class="nav-link text-gray-800 hover:text-primary transition"
+              >خانه</a
+            >
+            <a
+              href="index.html#books"
+              class="nav-link text-gray-800 hover:text-primary transition"
+              >کتاب‌ها</a
+            >
+            <a
+              href="index.html#services"
+              class="nav-link text-gray-800 hover:text-primary transition"
+              >خدمات</a
+            >
+            <a
+              href="events.html"
+              class="nav-link text-gray-800 hover:text-primary transition"
+              >رویدادها</a
+            >
+            <a
+              href="about.html"
+              class="nav-link text-gray-800 hover:text-primary transition"
+              >درباره ما</a
+            >
+            <a href="login.html" class="nav-link text-primary font-bold"
+              >ورود</a
+            >
+            <a
+              href="index.html#contact"
+              class="nav-link text-gray-800 hover:text-primary transition"
+              >تماس با ما</a
+            >
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-20 text-white text-center">
+      <div class="container mx-auto px-4">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">ورود به حساب کاربری</h1>
+        <p class="text-lg md:text-xl opacity-90 mb-6">
+          برای استفاده از خدمات کتابخانه دانش وارد حساب کاربری خود شوید.
+        </p>
+      </div>
+    </section>
+
+    <!-- Login Form -->
+    <main
+      class="py-16 bg-gray-50 min-h-screen flex items-center justify-center"
+    >
+      <div class="w-full max-w-md bg-white rounded-xl shadow-md p-8">
+        <form>
+          <div class="mb-6">
+            <label class="block mb-2 text-gray-700 font-bold" for="username"
+              >ایمیل یا نام کاربری</label
+            >
+            <input
+              id="username"
+              type="text"
+              class="w-full p-3 border border-gray-200 rounded focus:outline-none focus:border-primary"
+              placeholder="ایمیل یا نام کاربری"
+              required
+            />
+          </div>
+          <div class="mb-6">
+            <label class="block mb-2 text-gray-700 font-bold" for="password"
+              >رمز عبور</label
+            >
+            <input
+              id="password"
+              type="password"
+              class="w-full p-3 border border-gray-200 rounded focus:outline-none focus:border-primary"
+              placeholder="رمز عبور"
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-primary text-white py-3 rounded-lg font-bold hover:bg-primary-light transition"
+          >
+            ورود
+          </button>
+          <div class="flex justify-between mt-4 text-sm">
+            <a href="#" class="text-primary hover:underline"
+              >فراموشی رمز عبور؟</a
+            >
+            <a href="#" class="text-gray-500 hover:underline">ثبت‌نام</a>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t mt-16 py-6">
+      <div class="container mx-auto px-4 text-center text-gray-500 text-sm">
+        © ۱۴۰۴ کتابخانه دانش. تمامی حقوق محفوظ است.
+      </div>
+    </footer>
+  </body>
+</html>
